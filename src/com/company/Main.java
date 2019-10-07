@@ -4,6 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //Test
 
         ArrayStructures newArray = new ArrayStructures();
         newArray.generateRandomArray();
