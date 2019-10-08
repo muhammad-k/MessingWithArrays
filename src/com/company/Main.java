@@ -7,6 +7,7 @@ public class Main {
         System.out.println("test");
 
         /*
+        //DAY 1
         ArrayStructures newArray = new ArrayStructures();
         newArray.generateRandomArray();
         newArray.printArray();
@@ -19,11 +20,9 @@ public class Main {
         newArray.linearSearchforValue(17);*/
 
         ArrayStructures newArray = new ArrayStructures();
-
         newArray.generateRandomArray();
-
-        newArray.linearSearchforValue(11);
-
+        newArray.insertionSort();
+        newArray.binarySearchForValue(11);
 
     }
 }
