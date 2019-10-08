@@ -2,12 +2,6 @@ package com.company;
 
 public class ArrayStructures {
 
-    public static void main(String[] args) {
-        ArrayStructures newArray = new ArrayStructures();
-        newArray.generateRandomArray();
-        newArray.printArray();
-    }
-
     private int[] theArray = new int[50];
     private int arraySize = 10;
 
@@ -18,11 +12,12 @@ public class ArrayStructures {
     }
 
     public void printArray(){
-        System.out.println("------------");
+        System.out.println("----------");
         for(int i = 0; i < arraySize; i++){
             System.out.print("| " + i + " | ");
             System.out.println(theArray[i] + " |");
-            System.out.println("------------");
+            System.out.println("----------");
+
         }
     }
 
@@ -67,25 +62,58 @@ public class ArrayStructures {
 
         String indexesWithValue = "";
 
-        System.out.println("The value was found in the following indices: ");
-
         for(int i =0; i < arraySize; i++) {
             if (theArray[i] == value) {
                 valueInArray = true;
-
-                System.out.println(i + " ");
-
                 indexesWithValue += i + " ";
             }
+            printHorzArray(i, -1);
         }
 
         if(!valueInArray){
             indexesWithValue = "None";
-            System.out.println(indexesWithValue);
         }
 
+        System.out.println("The value was found in the following indices: " + indexesWithValue);
+        return indexesWithValue;
+    }
+
+    public void printHorzArray(int i, int j) {
+
+        for (int n = 0; n < 51; n++)
+            System.out.print("-");
 
         System.out.println();
-        return indexesWithValue;
+
+        for (int n = 0; n < arraySize; n++)
+            System.out.print("| " + n + "  ");
+
+        System.out.println("|");
+
+        for (int n = 0; n < 51; n++)
+            System.out.print("-");
+
+        System.out.println();
+
+        for (int n = 0; n < arraySize; n++)
+            System.out.print("| " + theArray[n] + " ");
+
+        System.out.println("|");
+
+        for (int n = 0; n < 51; n++)
+            System.out.print("-");
+
+        System.out.println();
+        System.out.println();
+    }
+
+    public void bubbleSort(){
+        for(int i = arraySize -1; i > 1; i--){
+            for(int j =0; j< i; j++){
+
+            }
+
+        }
+
     }
 }

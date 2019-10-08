@@ -4,8 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //Test
+        System.out.println("test");
 
+        /*
         ArrayStructures newArray = new ArrayStructures();
         newArray.generateRandomArray();
         newArray.printArray();
@@ -15,6 +16,14 @@ public class Main {
         newArray.printArray();
         newArray.insertValue(55);
         newArray.printArray();
-        newArray.linearSearchforValue(17);
+        newArray.linearSearchforValue(17);*/
+
+        ArrayStructures newArray = new ArrayStructures();
+
+        newArray.generateRandomArray();
+
+        newArray.linearSearchforValue(11);
+
+
     }
 }
