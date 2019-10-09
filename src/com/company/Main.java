@@ -19,10 +19,12 @@ public class Main {
         newArray.printArray();
         newArray.linearSearchforValue(17);*/
 
-        ArrayStructures newArray = new ArrayStructures();
+
+        //Day two going through sorting methods
+        /*ArrayStructures newArray = new ArrayStructures();
         newArray.generateRandomArray();
         newArray.insertionSort();
-        newArray.binarySearchForValue(11);
+        newArray.binarySearchForValue(11);*/
 
     }
 }
