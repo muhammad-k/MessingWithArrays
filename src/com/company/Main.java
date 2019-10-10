@@ -24,7 +24,8 @@ public class Main {
         /*ArrayStructures newArray = new ArrayStructures();
         newArray.generateRandomArray();
         newArray.insertionSort();
-        newArray.binarySearchForValue(11);*/
+        newArray.binarySearchForValue(11);
+        */
 
     }
 }
